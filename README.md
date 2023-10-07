@@ -4,8 +4,8 @@ A megoldást kérlek, töltsd fel GitHub vagy GitLab-ra és commitold lépésrő
 lássam, milyen fázisokban haladtál. Készíts hozzá egy rövid leírást is, ami leírja, hogyan
 indítható el az alkalmazás és a hozzá tartozó tesztek.
 
--Későn vettem észre, hogy sürön kéne commitolnom. A Controller teszteléseknál már próbáltam erre odafigyelni.
--Elinditás: Miután le lett tötltve a projektet utána rögtön el is lehet inditani az alkalmazást, mivel az adatbázishoz H2 adatbázist használtam.
+-Későn vettem észre, hogy sürön kéne commitolnom. A Controller teszteléseknél már próbáltam erre odafigyelni.
+-Elinditás: Miután le lett tötltve a projekt, utána rögtön el is lehet inditani az alkalmazást, mivel az adatbázishoz H2 adatbázist használtam.
 -Tesztek: A controllerek implamentációs tesztjei a controller package kattintva indiható el.
 
 A Intellij IDEA fejlesztettem az alkalmazást ezért célszerű ezt a használ.
