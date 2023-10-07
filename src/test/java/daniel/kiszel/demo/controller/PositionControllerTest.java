@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import daniel.kiszel.demo.DTO.JobDTO;
 import daniel.kiszel.demo.DTO.PositionRequestDTO;
 import daniel.kiszel.demo.interceptor.ApiKeyInterceptor;
-import daniel.kiszel.demo.model.Client;
 import daniel.kiszel.demo.model.Position;
 import daniel.kiszel.demo.service.ExternalJobService;
 import daniel.kiszel.demo.service.PositionService;
@@ -19,6 +18,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
@@ -34,11 +34,10 @@ import static org.mockito.BDDMockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 
+
+@WebMvcTest(controllers = PositionController.class)
 @AutoConfigureMockMvc(addFilters = false)
 @ExtendWith(MockitoExtension.class)
-@AutoConfigureTestDatabase
-@Transactional
-@SpringBootTest
 public class PositionControllerTest {
     @Autowired
     private MockMvc mockMvc;
@@ -56,14 +55,10 @@ public class PositionControllerTest {
     private ExternalJobService externalJobService;
     private PositionRequestDTO positionRequestDTO;
     private Position position;
-
-    private Client client;
-
     private UUID clientApiKey;
     @BeforeEach
     public void init() throws Exception{
         clientApiKey = UUID.randomUUID();
-        client = Client.builder().apiKey(clientApiKey).email("test@test.com").name("test").build();
 
         positionRequestDTO = PositionRequestDTO.builder().location("london").keyword("Account").build();
         position = Position.builder().id(1).location("london")
