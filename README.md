@@ -8,7 +8,7 @@ indítható el az alkalmazás és a hozzá tartozó tesztek.
 -Elinditás: Miután le lett tötltve a projekt, utána rögtön el is lehet inditani az alkalmazást, mivel az adatbázishoz H2 adatbázist használtam.
 -Tesztek: A controllerek implamentációs tesztjei a controller package kattintva indiható el.
 
-A Intellij IDEA-ba fejlesztettem az alkalmazást ezért célszerű ezt a használ.
+A Intellij IDEA-ba fejlesztettem az alkalmazást ezért célszerű ezt a fejlesztői környezetet használni a tesztelésére.
 
 Végpontok:
 
