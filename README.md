@@ -13,6 +13,9 @@ A Intellij IDEA-ba fejlesztettem az alkalmazást ezért célszerű ezt a haszná
 Végpontok:
 
 /positions [POST]
+
 /positions/{id} [GET]
+
 /positions/{keyword}/{location} [GET] // én Accounting/London teszteltem arra visszaadott egy rekordot.
+
 /clients [GET]
