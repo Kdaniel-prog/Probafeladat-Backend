@@ -2,7 +2,6 @@ package daniel.kiszel.demo.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import daniel.kiszel.demo.DTO.ClientRequestDTO;
-import daniel.kiszel.demo.model.Client;
 import daniel.kiszel.demo.service.ClientService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,8 +17,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 import static org.mockito.BDDMockito.given;
