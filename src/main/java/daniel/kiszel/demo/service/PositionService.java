@@ -41,7 +41,7 @@ public class PositionService {
         urls.put("url", position.getUrl());
         return urls;
     }
-    public Position getPosition(long id) {
+    public Position getPosition(Long id) {
         return positionRepository.findPositionById(id);
     }
     public ArrayList<JobDTO> getJobPositions(PositionRequestDTO positionRequestDTO){

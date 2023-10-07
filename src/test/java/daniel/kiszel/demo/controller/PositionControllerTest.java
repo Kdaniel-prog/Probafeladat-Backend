@@ -34,7 +34,6 @@ import static org.mockito.BDDMockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 
-
 @WebMvcTest(controllers = PositionController.class)
 @AutoConfigureMockMvc(addFilters = false)
 @ExtendWith(MockitoExtension.class)
@@ -69,7 +68,6 @@ public class PositionControllerTest {
                         any(HttpServletResponse.class), any(Object.class)))
                 .thenReturn(true); // For example, always return true for preHandle
     }
-
     @Test
     public void PositionController_CreateJob_ReturnJobLink() throws Exception{
         Map<String, String> urls = new HashMap<>();

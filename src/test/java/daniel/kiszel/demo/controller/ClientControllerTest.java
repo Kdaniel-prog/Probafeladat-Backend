@@ -43,7 +43,6 @@ public class ClientControllerTest {
     public void init(){
         clientRequestDTO = ClientRequestDTO.builder().name("Test").email("test@test.com").build();
     }
-
     @Test
     public void ClientController_CreateClient_ReturnApiKey() throws Exception{
         expectedUUID = UUID.randomUUID(); // Create a UUID to return from the service
