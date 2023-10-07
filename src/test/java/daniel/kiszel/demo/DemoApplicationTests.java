@@ -1,4 +1,4 @@
-package kiszel.daniel.demo;
+package daniel.kiszel.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
