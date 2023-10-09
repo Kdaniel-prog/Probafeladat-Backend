@@ -19,3 +19,5 @@ Végpontok:
 /positions/{keyword}/{location} [GET] // én Accounting/London teszteltem arra visszaadott egy rekordot.
 
 /clients [GET]
+
+Az alkalmazás a 8080 porton hallgatózik.
